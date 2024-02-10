@@ -1,49 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-<key>items</key>
-<array>
-<dict>
-<key>assets</key>
-<array>
-<dict>
-<key>kind</key>
-<string>software-package</string>
-<key>url</key>
-<string>https://www.dropbox.com/scl/fi/08nzvh74yklfqhbpfz0ea/YouTube_19.02.1_1707448746.ipa?rlkey=5xlkbnuk0yici745a66q7498p&dl=1</string>
-</dict>
-<dict>
-<key>kind</key>
-<string>display-image</string>
-<key>needs-shine</key>
-<true/>
-<key>url</key>
-<string>https://www.gfrigerio.com/app/test.png</string>
-</dict>
-<dict>
-<key>kind</key>
-<string>full-size-image</string>
-<key>needs-shine</key>
-<true/>
-<key>url</key>
-<string>https://www.gfrigerio.com/app/test.png</string>
-</dict>
-</array>
-<key>metadata</key>
-<dict>
-<key>bundle-identifier</key>
-<string>com.gfrigerio.test</string>
-<key>bundle-version</key>
-<string>1.0</string>
-<key>kind</key>
-<string>software</string>
-<key>title</key>
-<string>Test</string>
-<key>subtitle</key>
-<string>Test</string>
-</dict>
-</dict>
-</array>
+  <!-- array of downloads. -->
+  <key>items</key>
+  <array>
+   <dict>
+    <!-- an array of assets to download -->
+     <key>assets</key>
+      <array>
+       <!-- software-package: the ipa to install. -->
+        <dict>
+         <!-- required. the asset kind. -->
+          <key>kind</key>
+          <string>software-package</string>
+          <!-- required. the URL of the file to download. -->
+          <key>url</key>
+       <string>https://www.dropbox.com/scl/fi/08nzvh74yklfqhbpfz0ea/YouTube_19.02.1_1707448746.ipa?rlkey=5xlkbnuk0yici745a66q7498p&dl=1</string>          
+        </dict>
+        <!-- display-image: the icon to display during download.-->
+        <dict>
+         <key>kind</key>
+         <string>display-image</string>
+         <key>url</key>
+         <string>http://www.yourwebsite.com/inhouse/icon.png</string>
+        </dict>
+        <!-- full-size-image: the large 512x512 icon used by iTunes. -->
+        <dict>
+         <key>kind</key>
+         <string>full-size-image</string>
+         <key>needs-shine</key>
+         <true/>
+         <key>url</key><string>http://www.yourwebsite.com/inhouse/iTunesArtwork.png</string>
+        </dict>
+      </array><key>metadata</key>
+      <dict>
+       <!-- required -->
+       <key>bundle-identifier</key>
+       <string>com.yourwebsite.app</string>
+       <!-- optional (software only) -->
+       <key>bundle-version</key>
+       <string>1.0</string>
+       <!-- required. the download kind. -->
+       <key>kind</key>
+       <string>software</string>
+       <!-- optional. displayed during download; typically company name -->
+       <key>subtitle</key>
+       <string>Your App Name</string>
+       <!-- required. the title to display during the download. -->
+       <key>title</key>
+       <string>Your App Name</string>
+      </dict>
+    </dict>
+  </array>
 </dict>
 </plist>
